@@ -6,6 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Mein Portfolio</title>
 <link rel="stylesheet" href="style.css" />
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 </head>
 <body>
 <header>
@@ -32,6 +34,19 @@
 <div class="card">Masterprojekt: Entwicklung eines nutzerfreundlichen Werkzeugs zur 3D-Visualisierung keramischer Glasurproben</div>
 <div class="card">Game-Projekt: Sea of Scraps </div>
 <div class="card">3D-Renderings</div>
+</section>
+
+
+<section id="viewer3d" class="block">
+    <h2>3D Modell: Insektoid</h2>
+    <model-viewer
+        src="resources/insektoid.glb"
+        alt="3D Modell Insektoid"
+        auto-rotate
+        camera-controls
+        environment-image="neutral"
+        style="width: 100%; max-width: 600px; height: 400px; margin: 0 auto;">
+    </model-viewer>
 </section>
 
 
