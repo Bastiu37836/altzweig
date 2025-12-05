@@ -24,13 +24,37 @@
 
 <main>
 <section id="intro" class="block">
-    <h2>Intro</h2>
-    <p>Herzlich willkommen auf meiner Portfolio-Website! Hier finden Sie eine Übersicht meiner Projekte und wie Sie mich kontaktieren können.</p>
+    <h2>Herzlich willkommen in meinem Potfolio</h2>
+    <p>Hier finden Sie eine Auswahl meiner Projekte und Arbeiten, die ich in den letzten Jahren umgesetzt habe.</p>
 </section>
 
 <section id="projekte" class="block">
     <h2>Projekte</h2>
-    <div class="card">Masterprojekt: Entwicklung eines nutzerfreundlichen Werkzeugs zur 3D-Visualisierung keramischer Glasurproben
+
+    <div class="card">
+        <section id="video_shadowstalker" class="block">
+            <h2>Video: Shadowstalker Gameplay</h2>
+
+            <video id="shadowVideo"
+                src="resources/gameplay_shadowstalker.mp4"
+                muted
+                style="width: 100%; max-width: 1000px; height: auto; cursor: pointer; background: #000;">
+            </video>
+
+            <script>
+                const vid = document.getElementById("shadowVideo");
+                vid.addEventListener("click", () => {
+                    if (vid.paused) {
+                        vid.play();
+                    } else {
+                        vid.pause();
+                    }
+                });
+            </script>
+        </section>
+    </div>
+
+    <div class="card">
         <section id="viewer3d" class="block">
             <h2>3D Modell: Insektoid</h2>
             <model-viewer
@@ -44,12 +68,12 @@
         </section>
     </div>
 
-    <div class="card">Game-Projekt: Sea of Scraps 
+    <div class="card">
         <section id="viewer3d" class="block">
             <h2>3D Modell: Insektoid</h2>
             <model-viewer
-                src="resources/mgwithscope.glb"
-                alt="Sea of Scraps - Primärwaffe"
+                src="resources/mggun.glb"
+                alt="Sea of Scraps - Spieloptimierte Primärwaffe"
                 auto-rotate
                 camera-controls
                 environment-image="neutral"
@@ -58,7 +82,7 @@
         </section>  
     </div>
 
-    <div class="card">3D-Renderings
+    <div class="card">
         <section id="viewer3d" class="block">
             <h2>3D Modell: Insektoid</h2>
             <model-viewer
